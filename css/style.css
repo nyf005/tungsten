@@ -782,26 +782,32 @@ div .process-step:hover {
 
     h1 {
         margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 10px 20px; 
     }
 
     .button {
-        padding: 5px 10px;
+        padding: 5px 0px;
         margin-top: 20px;
     }
 
     .navbar {
         height: auto;
-        flex-direction: column;
-        padding-bottom: 20px;
     }
 
-    .logo-container {
-        flex: 1;
+    .navbar .container {
+        height: 100%;
+        flex-direction: column;
+        padding-bottom: 20px; 
     }
-    
-    .logo-name {
-        display: none;
+
+    .logo {
+        height: 30px;
     }
+
 
     .menu {
         flex: 2;
@@ -811,12 +817,17 @@ div .process-step:hover {
     .header{
         height: auto;
     }
-
-    .header-content {
-        width: 100%;
+    .header .container {
+        flex-direction: column;
         height: 100%;
+    }
+    .header-content {
         justify-content: center;
         gap: 10px;
+     }
+
+     .header-img {
+         height: 100px;
      }
 
     .offers {
@@ -911,6 +922,90 @@ div .process-step:hover {
 
     .copyright {
         padding: 20px 0;
+    }
+
+
+    .main-services .container {
+        flex-direction: column;
+    }
+
+    .processes {
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .process-step, div .process-step:hover {
+        width: 80%;
+    }
+
+    .aws .container {
+        background-position: 62%;
+    }
+
+    .achievements-header {
+        height: auto;
+        background-position: right;
+    }
+
+    .achievements-header .content {
+        width: 100%;
+        padding: 20px;
+        background-color: rgb(255, 255, 255, 0.8);
+    }
+
+    .mini-section {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .boxes {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .activity {
+        width: 100%;
+        border-radius: 0 50px 50px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .left-achievement i, .right-achievement i {
+        order: 0;
+    }
+
+    .left-achievement {
+        padding-right: 30px;
+    }
+    
+    .right-achievement {
+        padding-left: 30px;
+        border-radius: 50px 0 0 50px;
+    }
+    
+    .activity p {
+        text-align: justify;
+    }
+    
+    .achievement-activity i {
+        text-align: left;
+        font-size: 1.5em;
+        color: #006E51;
+      }
+
+      .contact-us-page {
+          height: auto;
+      }
+
+      .contact-card {
+        width: 100%;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .contact-form .button {
+        margin-top: 0;
     }
 
 }
